@@ -29,6 +29,13 @@
       border: none;
     }
   </style>
+  <script>
+    window.onload = function (){
+      document.querySelector('iframe').requestFullscreen()catch((err) => {
+        console.error('error attempting to enable full-screen mode: ${err.message}');
+      });
+    };
+  </script>
 </head>
 <body>
   <div class="iframe-container">
